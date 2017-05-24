@@ -1,0 +1,12 @@
+
+  {{#cart}}
+      <strong>productID:</strong>{{id}}<br>
+      <strong>productID:</strong>{{productID}}<br>
+      <strong>qty:</strong>{{qty}}
+      <hr></hr>
+
+    {{/cart}}
+  <a class="btn btn-default pull-left" href="/shopping/search">back</a>
+    <form method="post" action="/shopping/delete/{{cart.id}}?_method=DELETE">
+<input type="submit" class="btn btn-danger pull-right" value="Delete">
+    </form>

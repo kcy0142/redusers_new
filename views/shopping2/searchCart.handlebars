@@ -1,0 +1,21 @@
+<h1>Search Cart2</h1>
+{{#if error}}<span>{{error}}</span>{{/if}}
+<form class="form-inline" method="post" action="/shopping2/search">
+<div class="form-group">
+  <input type="text" name="id" class="form-control" placeholder="Search Cart">
+</div>
+<input type="submit" class="btn btn-primary" value="Search">
+</form>
+
+<!-- {{#cartkey}}
+    <strong>cart id:</strong>{{this}}<br>
+    <strong>cart idff:</strong>{{this.cart.user}}<br>
+    <hr></hr>
+  {{/cartkey}}
+<br> -->
+<h2>Cart Key List</h2><br>
+  {{#cartkey1}}
+      <strong>cart id:</strong>{{this}}<br>
+
+      <hr></hr>
+    {{/cartkey1}}

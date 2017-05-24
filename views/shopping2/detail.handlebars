@@ -1,0 +1,65 @@
+
+<h1>detail Cart2</h1>
+  {{#cart}}
+      <strong>productID:</strong>{{this.[0].id}}<br>
+        <strong>productID:</strong>{{this.[0]}}<br>
+          <strong>productID:</strong>{{this.0.id}}<br>
+            <strong>productID:</strong>{{this.[0].id}}<br>
+      <strong>productID:</strong>{{id}}<br>
+        <strong>productID:</strong>{{this}}<br>
+      <strong>productID:</strong>{{cart.id}}<br>
+        <strong>productID:</strong>{{cart.0.id}}<br>
+          <strong>productID:</strong>{{objects.id}}<br>
+            <strong>productID:</strong>{{object.id}}<br>
+      <strong>productID:</strong>{{obj.productID}}<br>
+      <strong>qty:</strong>{{qty}}
+      <hr></hr>
+
+    {{/cart}}
+
+    {{#each [cart]}}
+    <tr>
+      <td>{{ this.id }}</td>
+        <td>{{ id }}</td>
+      <td>{{ this.id }}</td>
+      <td>Invited</td>
+      <td>Confirmed</td>
+      <td>Edit</td>
+    </tr>
+  {{/each}}
+
+      {{#each cart}}
+        <strong>productID:</strong>{{this.id}}<br>
+        <strong>productID:</strong>{{id}}<br>
+        <strong>productID:</strong>{{cart.id}}<br>
+          <strong>productID:</strong>{{cart.0.id}}<br>
+            <strong>productID:</strong>{{objects.id}}<br>
+              <strong>productID:</strong>{{object.id}}<br>
+        <strong>productID:</strong>{{obj.productID}}<br>
+        <strong>qty:</strong>{{qty}}
+          <strong>productID:</strong>{{this}}<br>
+        <hr></hr>
+
+      {{/each}}
+
+    {{#each cart}}
+  {{@index}} : {{this}}, {{this.id}},{{id}}, {{ id }}<br>
+{{/each}}
+
+{{#each cart}}
+  Name : {{id}} {{id}}<br>
+{{/each}}
+
+------------------------------<br>
+    {{#cart1}}
+        <strong>productID:</strong>{{this.id}}<br>
+        <strong>productID:</strong>{{id}}<br>
+        <strong>productID:</strong>{{obj.productID}}<br>
+        <strong>qty:</strong>{{qty}}
+        <hr></hr>
+
+      {{/cart1}}
+  <a class="btn btn-default pull-left" href="/shopping2/search">back</a>
+    <form method="post" action="/shopping2/delete/{{cartID}}?_method=DELETE">
+<input type="submit" class="btn btn-danger pull-right" value="Delete">
+    </form>
